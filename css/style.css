@@ -1,0 +1,583 @@
+/*------ Add fonts -------*/
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Roboto black';
+    src: url('../fonts/roboto.black.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.ttf');
+}
+
+/*------ Clear border in chrome -------*/
+
+button:active, button:focus {
+    outline: none !important;
+}
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+/*------------- Top header ----------------*/
+.top-header {
+    height: 57px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.top-header .wrapper {
+    margin-top: 15px;
+}
+
+.top-header .wrapper img {
+    margin-right: 12px;
+}
+
+.top-header .wrapper .location {
+    margin-right: 35px;
+}
+
+.top-header .wrapper .enter {
+    color: #999999;
+    font-size: 13px;
+}
+
+.top-header .wrapper .enter .log {
+    float: left;
+    border-right: 1px solid #494949;
+    padding-right: 17px;
+}
+
+.top-header .wrapper .enter .register{
+    float: left;
+    margin-left: 13px;
+}
+
+/*-------------------- Cart head -----------------------*/
+
+.cart-head {
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #f0f2f7;
+}
+
+.cart-head .wrapper {
+    padding-right: 0;
+}
+
+.cart-head .menu {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.cart-head .menu .navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.cart-head .menu .navbar li{
+    display: inline;
+    margin-right: 30px;
+    color: #1c1e23;
+}
+
+.cart-head .menu .navbar li a{
+    text-decoration: none;
+    border-bottom: 2px dashed #1c1e23;
+    color: #1c1e23;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cart {
+    width: 245px;
+    height: 50px;
+    padding: 0;
+    margin-top: 6px;
+    border: 1px solid #f0f2f7;
+    border-radius: 5px;
+}
+
+
+.cart  #cart {
+    float: left;
+    width: 65px;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background: linear-gradient(to top, #01548d, #35a4ce);
+    font-size: 13px;
+    text-align: center;
+}
+
+.cart  #cart img {
+    margin-top: 10px;
+}
+
+.cart  #cart .cart-arrow {
+    right: 175px;
+    top: 3px;
+    position: absolute;
+}
+
+.cart #items {
+    float: left;
+    width: 175px;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.cart #items #sum {
+    color: #2b5aa1;
+}
+
+/*------------------ Menu head -----------------------*/
+
+.menu-head {
+
+}
+
+.menu-head .menu .navbar {
+    margin-top: 15px;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.menu-head .menu .navbar li{
+    display: inline;
+    margin-right: 45px;
+    color: #1c1e23;
+}
+
+.menu-head .menu .navbar li a{
+    text-decoration: none;
+    color: #1c1e23;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.menu-head .search {
+    margin-top: 10px;
+}
+
+.menu-head .search .btn-default {
+    background-color: #ececef;
+}
+
+.menu-head .search .form-control {
+    border-color: #ececec;
+}
+
+/*------------------ Slider ------------------------*/
+
+.slider {
+    background-color: #000;
+}
+
+.slider .arrow-left {
+    margin-top: 230px;
+    margin-right: 100px;
+}
+
+.slider .arrow-right {
+    margin-top: 230px;
+}
+
+.slider .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+}
+
+/*------------------ Advantages ---------------------*/
+
+.advantages {
+    margin-top: 70px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 16px;
+}
+
+.advantages .header h2 {
+    margin-bottom: 30px;
+    font-family: 'Roboto black', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.advantages img {
+    float: left;
+}
+
+.advantages .slogan {
+    display: block;
+    margin-left: 75px;
+}
+
+/*-------------------- Filters -----------------------*/
+
+.filter select {outline:none;}
+.filter select:active {outline:none;}
+
+.filter {
+    height: 490px;
+    margin-top: 90px;
+    background-image: url('../img/car-background.jpg');
+}
+
+.filter .tire-filter {
+    margin-top: 90px;
+    width: 555px;
+    height: 305px;
+    background: #f8f8f8 url('../img/disks.png') no-repeat 90% 70%;
+    border-radius: 10px;
+}
+
+.filter .disk-filter {
+    margin-top: 90px;
+    width: 555px;
+    height: 305px;
+    background: #f8f8f8 url('../img/disks-2.png') no-repeat 90% 70%;
+    border-radius: 10px;
+}
+
+.filter .tire-filter .filter-header,
+.filter .disk-filter .filter-header {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #1c1e23;
+}
+
+.filter .tire-filter .filter-header .btn,
+.filter .disk-filter .filter-header .btn {
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #565656;
+    border-radius: 10px;
+    border-right: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.btn:active, .btn.active {
+    background-image: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) inset;
+    outline: 0 none;
+}
+
+.filter .tire-filter .filter-header .unpressed,
+.filter .disk-filter .filter-header .unpressed {
+    margin-left: 60px;
+    margin-right: 10px;
+    color: #cacfde;
+}
+
+.filter-select {
+    display: block;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    float: left;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background: #f0f2f7 url('../img/down-arrow.png') no-repeat 95% 50%;
+    background-size: 15px;
+}
+
+.filter .select.season {
+    width: 40%;
+    margin-left: 45px;
+}
+
+.filter .select.producer {
+    width: 40%;
+}
+
+.filter .select.width {
+    margin-left: 45px;
+    margin-top: 25px;
+    width: 15%;
+}
+
+.filter .select.height {
+    width: 15%;
+    margin-top: 25px;
+}
+
+.filter .select.diameter {
+    width: 15%;
+    margin-top: 25px;
+}
+
+.filter .filter-group {
+    display: inline;
+}
+
+.filter label#for-width {
+    position: absolute;
+    left: 70px;
+    top: 220px;
+}
+
+.filter label#for-height {
+    position: absolute;
+    left: 175px;
+    top: 220px;
+}
+
+.filter label#for-diameter {
+    position: absolute;
+    left: 275px;
+    top: 220px;
+}
+
+.filter label {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.technology {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"] + label {
+    background: url('../img/checkbox.png') 0 0 no-repeat;
+    padding-left: 30px;
+}
+input[type="checkbox"]:checked + label {
+    background: url('../img/checked-checkbox.png') 0 0 no-repeat;
+}
+
+.technology .runflat {
+    display: inline-block;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    padding: 0 5px;
+    font-family: 'Myriad Pro', sans-serif;
+    background-color: #006ebf;
+    color: #fff;
+}
+
+.tire-filter .pickup {
+    width: 165px;
+    margin-top: -15px;
+    margin-left: 350px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-image: url('../img/pickup-btn.png');
+}
+
+.disk-filter label {
+    margin-top: 20px;
+    margin-left: 45px;
+    float: left;
+}
+
+.disk-filter .disk-sel {
+    width: 100px;
+}
+
+.disk-filter .pickup {
+    width: 165px;
+    margin-top: -15px;
+    margin-left: 350px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to top, #01548d, #35a4ce);
+}
+
+.disk-filter #dw {
+    margin-left: 25px;
+}
+
+.disk-filter #ch {
+    margin-left: 40px;
+}
+
+.disk-filter hr {
+    margin-top: 5px;
+}
+
+
+/*-------------------- Populars -------------------------*/
+
+.popular {
+    margin-top: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.popular h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popular .item-block {
+    height: 378px;
+    width: 268px;
+    margin-top: 30px;
+    border: 1px solid #f0f2f7;
+    text-align: center;
+}
+
+.popular .item-block img {
+    margin-top: 40px;
+}
+
+.popular .item-block img.new {
+    position: absolute;
+    margin-top: 40px;
+    top: -10px;
+    left: 15px;
+}
+
+.popular .item-block .description {
+    display: inline-block;
+    margin: 40px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.popular .item-block .season {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #b8bfd3;
+}
+
+.popular .item-block .price {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #343e5c;
+    font-weight: bold;
+}
+
+.popular .item-block .old-price {
+    display: block;
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #b8bfd3;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+/*--------------- Map -------------------*/
+
+.map {
+    margin-top: 50px;
+    background-color: #e4e5e7;
+}
+
+.map img {
+    margin-top: 85px;
+    margin-right: 30px;
+}
+
+.map h1 {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #5c5c5c;
+}
+
+.map #map {
+    width: 45%;
+}
+
+.map #text {
+    width: 55%;
+    margin-bottom: 115px;
+    padding-right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #5c5c5c;
+}
+
+/*---------------- Menu footer ---------------------*/
+
+.menu-footer {
+    background-color: #222328;
+    border-bottom: 1px solid #2d2e33;
+}
+
+.menu-footer .wrapper {
+    margin-top: 35px;
+}
+
+.menu-footer .menu .navbar {
+    margin-top: 15px;
+    margin-left: 70px;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.menu-footer .menu .navbar li{
+    display: inline;
+    margin-right: 35px;
+}
+
+.menu-footer .menu .navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-footer .btn-default {
+    background-color: #ececef;
+}
+
+.menu-footer .form-control {
+    height: 35px;
+}
+
+/*------------------ Bottom footer ---------------------*/
+
+.bottom-footer {
+    background-color: #222328;
+}
+
+.bottom-footer h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #606165
+}
